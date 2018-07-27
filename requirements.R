@@ -1,12 +1,15 @@
-# install.packages('DBI')
-# install.packages('RSQLite')
-# install.packages('request')
-# install.packages('plumber')
-# install.packages('plotly')
+installIfNotExists = function(x){
+  allPkgs = installed.packages()
+  if(!x%in% allPkgs){
+    install.packages(x)
+  }
+}
+
+installIfNotExists('DBI')
+installIfNotExists('RSQLite')
+installIfNotExists('request')
+installIfNotExists('plumber')
+installIfNotExists('plotly')
+installIfNotExists('shiny')
 
 
-library(DBI)
-library(RSQLite)
-library(request)
-library(readr)
-library(plumber)

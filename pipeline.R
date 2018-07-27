@@ -1,4 +1,9 @@
-source('requirements.R')
+library(DBI)
+library(RSQLite)
+library(request)
+library(readr)
+library(plumber)
+
 data_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data"
 data_cols = list(
   c('age', 'i'),
@@ -52,9 +57,5 @@ download_data()
 create_db()
 load_data()
 
-##################
-# Run host for api
-#################
-r=plumb('./app/api.R')
-r$run(port=8000)
+
 
