@@ -14,3 +14,4 @@ yu.fu3@anz.com
 
 ### Other useful resource for shiny build-up
 https://shiny.rstudio.com/gallery/
+https://plot.ly/r/
