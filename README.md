@@ -5,12 +5,12 @@ Yu(Robert) Fu
 yu.fu3@anz.com
 
 
-###Data2App -Tutorial For R
+### Data2App -Tutorial For R
 
 0. run requirements.R, this installs all needed packages
 1. run main.R, this prepares the data pipeline
 2. run run.R, this hosts the api service
 3. run another session of R, and open ./app/shinyapp.R. This uses shiny and plotly to build an simply app that consumes the data api
 
-###Other useful resource for shiny build-up
+### Other useful resource for shiny build-up
 https://shiny.rstudio.com/gallery/
